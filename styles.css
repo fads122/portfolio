@@ -466,6 +466,141 @@ ul { list-style: none; }
 
 .about p { color: var(--text-muted); font-size: 1.0625rem; }
 
+/* Education */
+.education {
+  padding: 2rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.education .container {
+  max-width: 640px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.education .container.observe-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-list li {
+  color: var(--text-muted);
+  font-size: 1.0625rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.education-list li:last-child { border-bottom: none; }
+
+.education-list .years {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text);
+  min-width: 6.5rem;
+}
+
+.education-list em {
+  font-style: italic;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
+/* Projects */
+.projects {
+  padding: 2rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.projects .container {
+  max-width: 640px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.projects .container.observe-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.project-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card:last-of-type { border-bottom: none; }
+
+.project-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem 0;
+}
+
+.project-meta {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem 0;
+}
+
+.project-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* --- Work: open book / resume --- */
 .work {
   padding: 4rem 2rem 5rem;
@@ -1002,6 +1137,33 @@ ul { list-style: none; }
   color: var(--accent);
   border-radius: 6px;
   border: 1px solid rgba(0, 212, 170, 0.25);
+}
+
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-group .terminal-tags {
+  margin-bottom: 0;
+}
+
+.skills-group-label {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+  opacity: 0.9;
 }
 
 .terminal-links {
